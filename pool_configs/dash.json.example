@@ -1,0 +1,71 @@
+{
+    "enabled": false,
+    "coin": "dash.json",
+
+    "auxes": [
+    ],
+    "address": "Tc9tamXfxTN7dDEbYeSTVFgHkuy6pGmfAC",
+    "addressTwo": "TcvqNVtW7WzH6GwMejVgv6aGsRrU27iLc8",
+    "addressThree": "Tgd347CuqqDp2PvMima3wqnQmVokc3VW7S",
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 600,
+        "minimumPayment": 9999999999,
+        "daemon": {
+            "host": "192.168.0.1",
+            "port": 8398,
+            "user": "rpc",
+            "password": "g6eJ6ZLCiws7mc0SVwlWhI7h4ve5yH"
+        }
+    },
+	
+    "ports": {
+        "3008": {
+            "diff": 0.05125
+        },
+        "3032": {
+            "diff": 0.0525,
+            "varDiff": {
+                "minDiff": 0.03125,
+                "maxDiff": 2,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 1
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "192.168.0.1",
+            "port": 8398,
+            "user": "rpc",
+            "password": "g6eJ6ZLCiws7mc0SVwlWhI7h4ve5yH"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "192.168.0.1",
+        "port": 8318,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": true,
+        "host": "192.168.0.1",
+        "port": 3306,
+        "user": "root",
+        "password": "asdwqfqfedef",
+        "database": "mpos",
+        "checkPassword": true,
+        "autoCreateWorker": true
+    },
+    
+    "//": "That's all, stop editing! Happy mining."
+
+}
